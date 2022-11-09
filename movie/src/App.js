@@ -32,26 +32,29 @@ function App() {
     setServerState('Loading....')
   
  try{
-  // const  response =  await fetch('https://swapi.dev/api/films/')
-    const  response =  await fetch('https://movie-app-6cc69-default-rtdb.firebaseio.com/movies.json',{
-      method:'POST'
-    })
+    const  response =  await fetch('https://movie-app-6cc69-default-rtdb.firebaseio.com/movies.json')
 
 
   if(!response.ok){
     throw new Error("Something went wrong!☄️")
   }
-  const  MoviesData  =  await response.json()
-   const UpdatedMoviesData = MoviesData.results.map((movieData)=>{
-    return {
-      id:movieData.episode_id,
-      title:movieData.title ,
-      openingText:movieData.opening_crawl,
-      releaseDate:movieData.release_date
-    }
-    
+  const  moviesData  =  await response.json()
+
+  const loadedMovies = []
+
+  for(const key in moviesData){
+    loadedMovies.push({
+      id:key,
+      title:moviesData[key].title,
+      openingText:moviesData[key].openingText,
+      releaseDate:moviesData[key].releaseDate
+
     })
-  setMoveData(UpdatedMoviesData)
+  } 
+
+ 
+    
+  setMoveData(loadedMovies)
   
 }catch(error){
   setServerState(error.message)
@@ -59,9 +62,9 @@ function App() {
 
   },[])
   
-  useEffect(()=>{
-    fetchDummyMoveData()
-    },[fetchDummyMoveData])
+  // useEffect(()=>{
+  //   fetchDummyMoveData()
+  //   },[fetchDummyMoveData])
   
 
   return (

@@ -22,5 +22,5 @@
     background-color: rgba(0, 255, 255, 0.051);
 }
 .textareaEnter::-webkit-scrollbar{
-    width: 5px;
+    width: 0px;
 }

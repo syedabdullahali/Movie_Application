@@ -1,20 +1,21 @@
 import './Input.css'
-import {useRef} from 'react'
+// import {useRef} from 'react'
+import React from 'react'
 
 
  
 
 
-function Input(props){
-const inpputValue = useRef('')
-const textareaValue = useRef('')
-
-console.log(props)
-
+const Input  = React.forwardRef(function (props,ref){
 
 const enterType =   props.input
-             ?<input className="inputEnter" ref={inpputValue} type={props.type} style={{height:props.height}}/>
-             :<textarea ref={textareaValue} className="inputEnter textareaEnter" style={{height:props.height}}/>
+             ?<input className="inputEnter"
+              ref={ref} type={props.type}
+              style={{height:props.height}}/>
+
+             :<textarea ref={ref} 
+             className="inputEnter textareaEnter" 
+             style={{height:props.height}}/>
 
 return <div className="inputParent" >
 <label className="inputTitle">{props.title}</label>
@@ -22,6 +23,6 @@ return <div className="inputParent" >
 </div>
 
 }
-
+)
 
 export default Input
