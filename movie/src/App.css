@@ -1,0 +1,22 @@
+.App {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+background-color: White;
+
+}
+.size{
+    height: 35rem; 
+
+    width: 55%;
+    padding: 30px;
+    border-radius: 25px;
+    background-color: rgba(5, 50, 71, 0.115);
+    display: grid;
+    grid-template-rows: 20% auto;
+    gap: 30px;
+    margin: 30px 0px;
+
+
+}

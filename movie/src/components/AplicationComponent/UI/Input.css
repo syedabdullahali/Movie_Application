@@ -1,0 +1,26 @@
+ .inputParent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;   
+
+}
+.inputTitle{
+    font-size: 25px;
+    font-weight: bold;
+}
+.inputEnter{
+    height: 30px;
+    border-radius: 14px;
+    outline: none;
+    border: 1.5px solid gray;
+    margin: 10px 0;
+    font-size: 20px;
+    padding: 5px 10px;
+
+}
+.inputEnter:focus{
+    background-color: rgba(0, 255, 255, 0.051);
+}
+.textareaEnter::-webkit-scrollbar{
+    width: 5px;
+}
