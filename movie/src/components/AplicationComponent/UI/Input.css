@@ -1,26 +1,32 @@
- .inputParent{
+.inputParent {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;   
+    justify-content: space-evenly;
 
 }
-.inputTitle{
-    font-size: 25px;
+
+.inputTitle {
+    font-size: 1.25rem;
     font-weight: bold;
 }
-.inputEnter{
-    height: 30px;
+
+.inputEnter {
+    height: 1.5rem;
+
     border-radius: 14px;
+    border: 0.1rem solid gray;
     outline: none;
-    border: 1.5px solid gray;
-    margin: 10px 0;
-    font-size: 20px;
-    padding: 5px 10px;
+
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    padding: 0.25rem 0.5rem;
 
 }
-.inputEnter:focus{
+
+.inputEnter:focus {
     background-color: rgba(0, 255, 255, 0.051);
 }
-.textareaEnter::-webkit-scrollbar{
+
+.textareaEnter::-webkit-scrollbar {
     width: 0px;
 }

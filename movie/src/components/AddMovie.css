@@ -1,12 +1,10 @@
-.form{
-    background-color: rgb(255, 255, 255);
-    width: 54vw;
-    box-shadow:  5px 5px 10px #bcbcbc,
-             -5px -5px 10px #e4e4e4;
-             border-radius: 14px;
-             margin: 30px 0px;
-             display: flex;
-             flex-direction: column;
-             /* justify-content: space-evenly; */
-             padding: 30px;
+.form {
+    margin: 1.5rem 0px;
+    padding: 30px;
+
+    box-shadow: 0.25rem 0.25rem 0.5rem #bcbcbc,
+        -0.25rem -0.25rem 0.2rem #e4e4e4;
+
+    border-radius: 1.2rem;
+   
 }
