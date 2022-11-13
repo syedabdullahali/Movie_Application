@@ -1,44 +1,41 @@
-.move{
-    padding: 30px;
+.move {
     background-color: white;
-    border-radius: 14px; 
-    overflow: hidden;   
-    box-shadow:  5px 5px 10px #bcbcbc,
-    -5px -5px 10px #e4e4e4;
+
+    padding: 1.5rem;
+
+    border-radius: 1.2rem;
+    overflow: hidden;
+
+    box-shadow: 0.25rem 0.25rem 0.5rem #bcbcbc,
+        -0.25px -0.25rem 0.5rem #e4e4e4;
 }
 
-
-
-.contentParent{
-height: 100%;
-width: 100%;
-overflow-y: scroll;
-display: grid;
-gap: 30px;
-
-}
-.contentParent::-webkit-scrollbar{
-    width: 0px;
-}
-
-
-
-.content{
-    background-color: rgb(5, 50, 71);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+.contentParent {
     height: 100%;
+    width: 100%;
+
+    overflow-y: scroll;
+
+    display: grid;
+    gap: 1.5rem;
 }
 
-.content >h1{
+.content {
+    height: 100%;
+    background-color: rgb(5, 50, 71);
+
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.content>h1 {
     color: rgb(206, 181, 249);
-    font-size: 30px;
+    font-size: 2rem;
+
     margin: 1.5rem;
 }
-.content >p{
+
+.content>p {
     color: white;
-    font-size: 20px;
-    text-align: center;
+    font-size: 1.2rem;
 }

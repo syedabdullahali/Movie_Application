@@ -1,22 +1,49 @@
 .App {
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-background-color: White;
-
-}
-.size{
-    height: 35rem; 
-
-    width: 55%;
-    padding: 30px;
-    border-radius: 25px;
-    background-color: rgba(5, 50, 71, 0.115);
+    background-color: White;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+  
+  .size {
+    height: 35rem;
     display: grid;
-    grid-template-rows: 20% auto;
-    gap: 30px;
-    margin: 30px 0px;
-
-
-}
+    grid-template-rows: 20%;
+    gap: 1.5rem;
+  
+    background-color: rgba(5, 50, 71, 0.115);
+    border-radius: 1.3rem;
+  
+    padding: 1.5rem;
+    margin: 1.5rem 0px;
+  }
+  @media (max-width:750px){
+    .size{
+      margin: 0rem;
+      border-radius: 0.5rem;
+  
+    }
+  
+  }
+  ::-webkit-scrollbar {
+    width: 0rem;
+  }
+  .sizecontroler{
+    width: 55vw;
+  }
+  
+  @media (max-width:1050px){
+    .sizecontroler{
+      width: 65vw;
+    }
+  }
+  
+  @media (max-width:750px){
+    .sizecontroler{
+      width: 95vw;
+    }
+  }
+  

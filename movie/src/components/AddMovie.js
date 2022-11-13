@@ -32,7 +32,7 @@ function AddMovie() {
         <Input ref={inputTitle} type='text' title='Title' input={true} height='35px' ></Input>
         <Input ref={inputOpeningText} title='Opening Text' height='250px' ></Input>
         <Input ref={inputReleaseDate} type='date' title='Release Date' input={true} height='35px' ></Input>
-        <Button onClick={addMoveHnadler} height='45px' size='20px' default="10px" > AddMovies</Button>
+        <Button onClick={addMoveHnadler} height='45px' width="100%"  size='20px' default="10px" > AddMovies</Button>
     </form>
 
 
